@@ -1,0 +1,99 @@
+/* color */
+:root
+{
+    --color-yellow:hsl(31, 77%, 52%);
+    --color-bright-blue:hsl(184, 100%, 22%);
+    --color-dark-blue:hsl(179, 100%, 13%);
+}
+
+/* GLOBAL STYLE  */
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 15px;
+}
+.main
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    overflow: hidden;
+}
+.main .container .box
+{
+    padding: 2rem;
+    padding-bottom: 0;
+    color: white;
+}
+.main .container .box.one
+{
+    background-color: var(--color-yellow);
+}
+.main .container .box.box.two
+{
+    background-color: var(--color-bright-blue);
+}.main .container .box.three
+{
+    background-color: var(--color-dark-blue);
+}
+.main .container .box h2
+{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+}
+.main .container .box p
+{
+    font-size: .8rem;
+    font-family: 'Lexend Deca';
+    line-height: 1.6;
+    height: 100px;
+    width: 200px;
+
+}
+.main .container .box a
+{
+    display: block;
+    margin: 3rem 0;
+    text-decoration: none;
+    background-color: white;
+    width: fit-content;
+    font-size: .9rem;
+    font-family: 'Lexend Deca';
+    padding: .7rem 1.5rem;
+    border-radius: 1rem;
+}
+.main .container .box.one a
+{
+    color: var(--color-yellow);
+}
+.main .container .box.two a
+{
+    color: var(--color-bright-blue);
+}
+.main .container .box.three a
+{
+    color: var(--color-dark-blue);
+}
+@media (max-width:767px) {
+    .main .container
+    {
+        flex-direction: column;
+    }
+    
+}
